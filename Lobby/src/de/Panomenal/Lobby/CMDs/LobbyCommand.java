@@ -29,7 +29,7 @@ public class LobbyCommand implements CommandExecutor{
 		}
 		
 		Player p = (Player)sender;
-		if(p.hasPermission("Panomenal.*") | p.hasPermission("Panomenal.Lobby.use")){
+		if(p.hasPermission("Panomenal.*") | p.hasPermission("Panomenal.Lobby.seeCMDs")){
 			if(args.length == 0) {
 				p.sendMessage("§8§m----------"+Lobby.getInstance().getPrefix()+"§8§m----------");
 				for(SubCommand sc : cmds) {
