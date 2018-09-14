@@ -1,0 +1,7 @@
+name: Lobby-System
+version: 0.0.1
+author: Panomenal, Blo0dR0gue
+
+main: de.Panomenal.Lobby.Lobby
+
+commands:
