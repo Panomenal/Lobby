@@ -29,7 +29,7 @@ public class LobbyCommand implements CommandExecutor{
 			if(args.length == 0) {
 				p.sendMessage("§8§m----------"+Lobby.getInstance().getPrefix()+"§8§m----------");
 				for(SubCommand sc : cmds) {
-					p.sendMessage("�8/�5Lobby "+aliases(sc)+ " " + sc.getUsage() + " �8- �7"+sc.getMessage());
+					p.sendMessage(Lobby.getInstance().getPrefix()+"/Lobby "+aliases(sc)+ " " + sc.getUsage() + " �8- �7"+sc.getMessage());
 				}
 				p.sendMessage("§8§m--------------------------");
 				return true;
