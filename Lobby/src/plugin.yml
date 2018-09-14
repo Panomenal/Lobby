@@ -5,3 +5,6 @@ author: Panomenal, Blo0dR0gue
 main: de.Panomenal.Lobby.Lobby
 
 commands:
+  Lobby:
+    description: Lobby-System Commands
+    usage: /Lobby

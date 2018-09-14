@@ -8,6 +8,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.Panomenal.Lobby.CMDs.LobbyCommand;
 import de.Panomenal.Lobby.Managers.MySQL_zusatz;
 import de.blo0dr0gue.messageapi.MessageAPI;
 import de.blo0dr0gue.mysqlapi.MySQLAPI;
@@ -34,6 +35,7 @@ public class Lobby extends JavaPlugin{
 		Bukkit.getConsoleSender().sendMessage(getPrefix()+"Plugin wird gestartet.");
 		mysql_z.con = mysql.connect("minecraft_server");
 		implementsListener();
+		getCommand("Lobby").setExecutor(new LobbyCommand());
 	}
 	
 	private void implementsListener() {
