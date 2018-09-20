@@ -42,7 +42,7 @@ public class LobbyCommand implements CommandExecutor{
 			SubCommand sc = getCommand(args[0]);
 			
 			if(sc == null) {
-				p.sendMessage(Lobby.getInstance().getPrefix() + Lobby.getInstance().messageAPI.msg(p, "Lobby_noCMD"));
+				p.sendMessage(Lobby.getInstance().getPrefix() + Lobby.getInstance().messageAPI.msg(p, "Panomenal_noCMD"));
 				return true;
 			}
 			

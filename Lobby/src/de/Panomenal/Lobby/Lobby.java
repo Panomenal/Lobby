@@ -22,7 +22,7 @@ public class Lobby extends JavaPlugin{
 	public void onEnable() {
 		mysql = new MySQLAPI();
 		mysql_z = new MySQL_zusatz();
-		messageAPI = new MessageAPI();
+		messageAPI = new MessageAPI(true);
 		m = this;
 		prefix = mysql_z.getPrefix();
 		Bukkit.getConsoleSender().sendMessage(getPrefix()+"Plugin wird gestartet.");
